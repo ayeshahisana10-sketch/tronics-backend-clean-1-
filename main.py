@@ -16,10 +16,10 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from models import TraceRequest, TraceReport, ComplaintIntake
-from .tracer import trace_wallet
-from .alerts import maybe_send_alert
-from .tron_client import TronClientError
-from .db import save_trace_report, save_complaint, DatabaseNotConfigured
+from tracer import trace_wallet
+from alerts import maybe_send_alert
+from tron_client import TronClientError
+from db import save_trace_report, save_complaint, DatabaseNotConfigured
 
 app = FastAPI(
     title="TRONICS",
