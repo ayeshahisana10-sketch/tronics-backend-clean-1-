@@ -9,7 +9,7 @@ locked technical decision.
 import httpx
 from typing import List, Dict, Any, Optional
 
-from . import config
+import config
 
 
 class TronClientError(Exception):
