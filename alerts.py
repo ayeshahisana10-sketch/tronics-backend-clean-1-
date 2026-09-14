@@ -5,8 +5,8 @@ not a stub -- but it is triggered on-demand after a trace completes, which
 is why we call the system "near-real-time", not "real-time".
 """
 import httpx
-from . import config
-from .models import TraceReport
+import config
+from models import TraceReport
 
 
 def maybe_send_alert(report: TraceReport) -> bool:
