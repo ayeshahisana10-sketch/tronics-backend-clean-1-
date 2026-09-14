@@ -12,9 +12,9 @@ Locked design (see TRONICS_Decisions_Summary.md):
 """
 from typing import List, Optional
 
-from . import config
-from .tron_client import get_usdt_transfers, normalize_transfer, get_tronscan_label
-from .models import TraceReport, HopResult, TransferRecord
+import config
+from tron_client import get_usdt_transfers, normalize_transfer, get_tronscan_label
+from models import TraceReport, HopResult, TransferRecord
 
 
 def _to_transfer_record(t: dict) -> TransferRecord:
