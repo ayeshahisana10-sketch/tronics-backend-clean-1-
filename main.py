@@ -15,7 +15,7 @@ Run locally:
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from .models import TraceRequest, TraceReport, ComplaintIntake
+from models import TraceRequest, TraceReport, ComplaintIntake
 from .tracer import trace_wallet
 from .alerts import maybe_send_alert
 from .tron_client import TronClientError
